@@ -4,16 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ConsumidorWS.xcscheme</key>
+		<key>Pods-ConsumidorWS.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>ConsumidorWS.xcscheme_^#shared#^_</key>
+		<key>RijndaelSwift.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>

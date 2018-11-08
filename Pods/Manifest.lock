@@ -1,0 +1,16 @@
+PODS:
+  - RijndaelSwift (0.1.3)
+
+DEPENDENCIES:
+  - RijndaelSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RijndaelSwift
+
+SPEC CHECKSUMS:
+  RijndaelSwift: 2d722b9390d8cebc0dd19c20bc84ddb4db06eb18
+
+PODFILE CHECKSUM: f65a88eb3c6512725c3383f68099b684bedcbca8
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,6 @@
+framework module Pods_ConsumidorWS {
+  umbrella header "Pods-ConsumidorWS-umbrella.h"
+
+  export *
+  module * { export * }
+}

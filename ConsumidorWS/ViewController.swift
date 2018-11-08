@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import RijndaelSwift
 
 class ViewController: UIViewController, XMLParserDelegate {
 
     @IBOutlet weak var txtResultado: UITextField!
     @IBOutlet weak var txtEndpoint: UILabel!
+    @IBOutlet weak var txtChain: UITextField!
+    @IBOutlet weak var txtDecryptResult: UITextField!
     
     var currentParsingElement:String = ""
     var dateString:String = ""
@@ -19,6 +22,8 @@ class ViewController: UIViewController, XMLParserDelegate {
     var dataTask: URLSessionDataTask?
     let mySession = URLSession.shared
     var parser = XMLParser()
+    
+    let key = "Expr3s10nB1n4r14"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +39,7 @@ class ViewController: UIViewController, XMLParserDelegate {
         let url = URL(string: endpoint)
         let req = NSMutableURLRequest(url: url!)
         let msgLength = soapMessage.count
+        
        
         req.addValue("text/xml; charset=utf-8", forHTTPHeaderField: "Content-Type")
         req.addValue(String(msgLength), forHTTPHeaderField: "Content-Length")
@@ -97,6 +103,12 @@ class ViewController: UIViewController, XMLParserDelegate {
         print("parseErrorOccurred: \(parseError)")
     }
     
+    @IBAction func decrypt(_ sender: UIButton) {
+        //let IV = "keyBytes"
+        //let r = Rijndael(key: key, mode: .cbc)!
+        //let plainData = txtChain.text
+        //let cipherData = r.e
+    }
     
 }
 

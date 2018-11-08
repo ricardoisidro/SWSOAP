@@ -62,28 +62,77 @@
                                     <action selector="btnGet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CxW-Pf-0U9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encriptación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hG0-CW-3KI">
+                                <rect key="frame" x="139.5" y="338" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eu5-vf-eG2">
+                                <rect key="frame" x="87.5" y="367" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="adK-A4-N4k"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjc-G9-RAl">
+                                <rect key="frame" x="143" y="416" width="89" height="30"/>
+                                <state key="normal" title="Desencriptar"/>
+                                <connections>
+                                    <action selector="decrypt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CiD-2L-sf2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tos-yc-MLJ">
+                                <rect key="frame" x="149" y="464" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JL6-9E-uvg">
+                                <rect key="frame" x="87.5" y="493" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="sCh-Gh-BwP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="toy-FP-KcS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="0B2-a7-EtU"/>
+                            <constraint firstItem="hG0-CW-3KI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2JL-2T-REN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jhd-pj-YTg" secondAttribute="trailing" constant="48" id="37i-I3-qum"/>
+                            <constraint firstItem="Eu5-vf-eG2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4WF-Wz-BXE"/>
+                            <constraint firstItem="JL6-9E-uvg" firstAttribute="top" secondItem="tos-yc-MLJ" secondAttribute="bottom" constant="8" id="5Sg-Sm-dRd"/>
                             <constraint firstItem="CQc-Bq-nMG" firstAttribute="top" secondItem="u1n-4G-ee3" secondAttribute="bottom" constant="51" id="DIc-Ic-bGT"/>
                             <constraint firstItem="aRY-cW-pLi" firstAttribute="top" secondItem="Jhd-pj-YTg" secondAttribute="bottom" constant="20" id="HdC-ac-EdU"/>
+                            <constraint firstItem="JL6-9E-uvg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KQW-Tk-AJa"/>
                             <constraint firstItem="u1n-4G-ee3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="Mdd-r2-Lez"/>
+                            <constraint firstItem="Tjc-G9-RAl" firstAttribute="top" secondItem="Eu5-vf-eG2" secondAttribute="bottom" constant="19" id="O8l-MU-sDD"/>
+                            <constraint firstItem="Tjc-G9-RAl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OFC-bk-3SH"/>
+                            <constraint firstItem="tos-yc-MLJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SRs-87-Ttz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="toy-FP-KcS" secondAttribute="trailing" constant="149" id="SeA-9X-nYj"/>
                             <constraint firstItem="vz1-Ln-U3i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="103" id="TGp-kA-PMu"/>
                             <constraint firstItem="aRY-cW-pLi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aAP-Qm-M1H"/>
                             <constraint firstItem="toy-FP-KcS" firstAttribute="top" secondItem="CQc-Bq-nMG" secondAttribute="bottom" constant="45" id="hMD-uQ-hlg"/>
                             <constraint firstItem="vz1-Ln-U3i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iYa-DJ-oiq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CQc-Bq-nMG" secondAttribute="trailing" constant="16" id="jde-c8-X8J"/>
+                            <constraint firstItem="tos-yc-MLJ" firstAttribute="top" secondItem="Tjc-G9-RAl" secondAttribute="bottom" constant="18" id="k0M-Hn-JUY"/>
                             <constraint firstItem="CQc-Bq-nMG" firstAttribute="leading" secondItem="vz1-Ln-U3i" secondAttribute="trailing" constant="8" id="nfp-9S-Psp"/>
                             <constraint firstItem="Jhd-pj-YTg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="nqh-uu-hTl"/>
+                            <constraint firstItem="hG0-CW-3KI" firstAttribute="top" secondItem="aRY-cW-pLi" secondAttribute="bottom" constant="37" id="qOD-Nj-dj4"/>
                             <constraint firstItem="Jhd-pj-YTg" firstAttribute="top" secondItem="toy-FP-KcS" secondAttribute="bottom" constant="8" id="qPC-5H-yEv"/>
+                            <constraint firstItem="Eu5-vf-eG2" firstAttribute="top" secondItem="hG0-CW-3KI" secondAttribute="bottom" constant="8" id="sJs-PH-bff"/>
                             <constraint firstItem="u1n-4G-ee3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xBc-r3-tdI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="txtChain" destination="Eu5-vf-eG2" id="9YF-Cr-Esh"/>
+                        <outlet property="txtDecryptResult" destination="JL6-9E-uvg" id="TrU-86-Epa"/>
                         <outlet property="txtEndpoint" destination="CQc-Bq-nMG" id="Csl-b8-eEA"/>
                         <outlet property="txtResultado" destination="Jhd-pj-YTg" id="OZL-vL-Znm"/>
                     </connections>
