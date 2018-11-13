@@ -7,14 +7,11 @@
 //
 
 import UIKit
-import RijndaelSwift
 
 class ViewController: UIViewController, XMLParserDelegate {
 
     @IBOutlet weak var txtResultado: UITextField!
     @IBOutlet weak var txtEndpoint: UILabel!
-    @IBOutlet weak var txtChain: UITextField!
-    @IBOutlet weak var txtDecryptResult: UITextField!
     
     var currentParsingElement:String = ""
     var dateString:String = ""
@@ -101,13 +98,6 @@ class ViewController: UIViewController, XMLParserDelegate {
     
     func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
         print("parseErrorOccurred: \(parseError)")
-    }
-    
-    @IBAction func decrypt(_ sender: UIButton) {
-        //let IV = "keyBytes"
-        //let r = Rijndael(key: key, mode: .cbc)!
-        //let plainData = txtChain.text
-        //let cipherData = r.e
     }
     
 }
